@@ -5,12 +5,12 @@ sudo: required
 branches:
   only:
     - master
-    
+
 services:
   - docker
 
 script:
  - docker build --tag orleika/web-static .
- - docker up -d
+ - docker run -d -p 80:80 orleika/web-static
  - sleep 5
  - curl -sSf localhost
