@@ -1,0 +1,7 @@
+if ($http_user_agent ~* LWP::Simple|BBBike|wget) {
+    return 403;
+}
+
+if ($http_user_agent ~* msnbot|scrapbot) {
+    return 403;
+}

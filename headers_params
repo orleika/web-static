@@ -1,0 +1,11 @@
+# https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options
+add_header X-Frame-Options SAMEORIGIN;
+
+# https://www.owasp.org/index.php/List_of_useful_HTTP_headers
+add_header X-XSS-Protection "1; mode=block";
+
+# https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
+add_header X-Content-Type-Options nosniff;
+
+# https://www.owasp.org/index.php/Content_Security_Policy
+add_header Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ssl.google-analytics.com; img-src 'self' https://ssl.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com 'self' https://themes.googleusercontent.com; frame-src 'none' object-src 'none'";

@@ -1,0 +1,3 @@
+if ($http_referer ~* (babes|forsale|girl|jewelry|love|nudit|organic|poker|porn|sex|teen)) {
+    return 403;
+}

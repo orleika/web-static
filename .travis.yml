@@ -1,0 +1,12 @@
+language: bash
+
+sudo: required
+
+services:
+  - docker
+
+script:
+ - docker build --tag orleika/web-static .
+ - docker up -d
+ - sleep 5
+ - curl -sSf localhost
