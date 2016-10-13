@@ -1,8 +1,11 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://orleika.github.io/mit-license)
+[![Build Status](https://img.shields.io/travis/orleika/web-static/master.svg?style=flat-square)](https://travis-ci.org/orleika/web-static)
 [![nginx](http://img.shields.io/badge/nginx-v1.11.5-blue.svg?style=flat-square)](https://nginx.org/en/download.html)
 [![LibreSSL](http://img.shields.io/badge/LibreSSL-v2.5.0-blue.svg?style=flat-square)](https://www.libressl.org/)
 
 # orleika/web-static
+<img src="https://rawgit.com/orleika/web-static/images/Nginx_logo.svg" alt="nginx logo">
+
 small-secure-fast and static web server.  
 kudos for [Wonderfall/dockerfiles](https://github.com/Wonderfall/dockerfiles).
 
