@@ -4,7 +4,7 @@
 [![LibreSSL](http://img.shields.io/badge/LibreSSL-v2.5.0-blue.svg?style=flat-square)](https://www.libressl.org/)
 
 # orleika/web-static
-<img src="https://rawgit.com/orleika/web-static/images/Nginx_logo.svg" alt="nginx logo">
+![nginx logo](https://rawgit.com/orleika/web-static/images/Nginx_logo.svg)
 
 small-secure-fast and static web server.  
 kudos for [Wonderfall/dockerfiles](https://github.com/Wonderfall/dockerfiles).
@@ -37,20 +37,20 @@ This docker image size is only about *21MB*.
 - Optimized configuration.
 
 ## configuration
-<pre>
-/etc/ngix
+```
+/etc/nginx
 ├── conf.d
-│   ├── block_bots
-│   ├── block_hotlink
-│   ├── block_spams
-│   ├── headers_params
-│   ├── ssl_params
-│   ├── vhost_http.conf
-│   └── vhost_https.conf
+│   ├── block_bots
+│   ├── block_hotlink
+│   ├── block_spams
+│   ├── headers_params
+│   ├── ssl_params
+│   ├── vhost_http.conf
+│   └── vhost_https.conf
 ├── nginx.conf
 └── sites-enabled
-     └── default.conf
-</pre>
+     └── default.conf
+```
 
 - `conf.d/headers_params`:
 includes X-Frame-Options, X-XSS-Protection, X-Content-Type-Options, CSP.
