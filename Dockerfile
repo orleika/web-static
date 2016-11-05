@@ -23,7 +23,7 @@ RUN addgroup -S nginx \
   zlib-dev \
   binutils \
   gnupg \
-  && apk add --update --no-chache \
+  && apk add --update --no-cache \
   pcre \
   zlib \
   libgcc \
