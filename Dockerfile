@@ -60,7 +60,7 @@ RUN addgroup -S nginx \
     --lock-path=/var/run/nginx.lock \
     --user=nginx \
     --group=nginx \
-    --with-cc-opt='--pipe -O3 -fPIE -fstack-protector-all -Wstack-protector --param ssp-buffer-size=4 -Wformat -Werror=format-security' \
+    --with-cc-opt='--pipe -O3 -fPIE -fstack-protector-all -Wstack-protector --param ssp-buffer-size=4 -Wformat -Werror=format-security -Wno-deprecated-declarations' \
     --with-ld-opt='-Wl,-Bsymbolic-functions -Wl,-z,relro,-z,now' \
     --with-openssl=/tmp/libressl-${LIBRESSL_VERSION} \
     --with-http_ssl_module \
