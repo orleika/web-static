@@ -34,7 +34,7 @@ RUN addgroup -S nginx \
   && git clone https://github.com/bagder/libbrotli --depth=1 && cd libbrotli \
   && ./autogen.sh && ./configure && make -j ${BUILD_CORES} && make install \
   && cd /tmp \
-  && git clone https://github.com/google/ngx_brotli --depth=1 \
+  && git clone https://github.com/google/ngx_brotli --recursive \
   && git clone https://github.com/openresty/headers-more-nginx-module --depth=1 \
   && LIBRESSL_TARBALL="libressl-${LIBRESSL_VERSION}.tar.gz" \
   && wget -q http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/${LIBRESSL_TARBALL} \
